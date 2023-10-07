@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!--meta-->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="description" content="Портал государственных закупок Республики Казахстан">
+    <meta name="author" content="stacks">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link href="/assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet">
+    <link href="/assets/plugins/uniform/css/default.css" rel="stylesheet">
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/waves/waves.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/slidepushmenus/css/component.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/sv_style.css" rel="stylesheet" type="text/css">
+    <link href='https://goszakup.gov.kz//assets/plugins/datatables2/datatables.min.css?' rel='stylesheet'>
+<link href='https://goszakup.gov.kz//assets/plugins/datatables/css/jquery.datatables_themeroller.css?' rel='stylesheet'>
+<link href='https://goszakup.gov.kz/css/contract/style.css?1600776910' rel='stylesheet'>
+
+
+    <!-- Theme Styles -->
+    <link href="/assets/css/meteor.css?1494997960" rel="stylesheet" type="text/css">
+    <link href="/assets/css/layers/dark-layer.css?1473349386" class="theme-color" rel="stylesheet" type="text/css">
+    <link href="/assets/css/custom.css?1430715238" rel="stylesheet" type="text/css">
+    <link href="/css/style.css?1655273908" rel="stylesheet">
+
+    <script src="/assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+                                                                            
+            <script type='text/javascript' src='https://goszakup.gov.kz//js/helpers.js?1491901432' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/js/helpers.js?1491901432' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/jquery-ui/jquery-ui.min.js?1467986986' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/js/clock.js?1663577852' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/js/js.cookie.js?1503987592' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/pace-master/pace.min.js?1415248294' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/jquery-blockui/jquery.blockui.js?1416755680' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js?1474730822' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/switchery/switchery.min.js?1415183154' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/uniform/js/jquery.uniform.standalone.js?1472081050' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/offcanvasmenueffects/js/classie.js?1367546544' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/waves/waves.min.js?1427598902' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/3d-bold-navigation/js/main.js?1428757868' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/js/meteor.js?1529488949' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/uniform/js/jquery.uniform.bundled.js?1472081050' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/assets/plugins/datatables2/datatables.min.js?1492493152' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/js/sv_script.js?1503987592' charset='utf-8'></script>
+<script type='text/javascript' src='https://goszakup.gov.kz/js/bootstrap-dialog.js?1491901432' charset='utf-8'></script>
+
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function(){
+                if($(this).scrollTop()>140){
+                    $('#scrollUp').show();
+                }
+                else if ($(this).scrollTop()<140){
+                    $('#scrollUp').hide();
+                }
+            });
+            $('#scrollUp').on('click', function(){
+                $("body,html").animate({
+                    scrollTop:0
+                }, 800);
+            });
+        });
+    </script>
+
+    <title>Портал государственных закупок Республики Казахстан</title>
+    <script>var user_id = 0</script>
+</head>
+<body class="compact-menu  pace-done page-horizontal-bar" style="background: #f3f3f3">
+<div class="sv_settings text-center" id="sv_settings">
+    <span>Размер шрифта
+        <span class="fs-outer">
+            <button class="btn btn-default fs-n" id="fs-n">А</button>
+            <button class="btn btn-default fs-m" id="fs-m">А</button>
+            <button class="btn btn-default fs-l" id="fs-l">А</button>
+        </span>
+    </span>
+
+    <span class="mgl20">Цветовая схема
+        <span class="cs-outer">
+            <button class="btn btn-default cs-bw" id="cs-bw">А</button>
+            <button class="btn btn-default cs-wb" id="cs-wb">А</button>
+            <button class="btn btn-default cs-bb" id="cs-bb">А</button>
+            <button class="btn btn-default cs-gb" id="cs-gb">А</button>
+            <button class="btn btn-default cs-yg" id="cs-yg">А</button>
+        </span>
+    </span>
+
+    <span class="mgl20">Изображения
+        <span class="img-outer">
+            <button class="btn btn-default" id="img-onoff"><span class="glyphicon glyphicon-picture"></span><span id="img-onoff-text"> Отключить</span></button>
+        </span>
+    </span>
+</div>
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div class="overlay"></div>
+<main class="page-content content-wrap">
+    <div class="links-bar">
+        <!--<div class="contrast">
+            <a href="#" id="sv_on" class="btn btn-default">
+                <strong>Версия для слабовидящих</strong>
+            </a>
+        </div>-->
+        <div class="archive">
+            <a href="http://old.goszakup.gov.kz/">Архив</a>
+        </div>
+        <div class="lang">
+            <a href="javascript:void(0)" class="cur_time">01.11.2022 08:11:34</a>
+            <a href="https://satypalu.gov.kz/">KZ</a>
+            <a href="https://goszakup.gov.kz/">RU</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="sidebar-pusher">
+                <a href="javascript:void(0);" class="waves-effect waves-button push-sidebar">
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </div>
+            <div class="logo-box">
+                <a href="/" class="logo-text"><span><img src="/images/logo_header_min.png" height="60"></span> Государственные закупки Республики Казахстан</a>
+            </div><!-- Logo Box -->
+            <div class="topmenu-outer">
+                <div class="support hidden-xs">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span aria-hidden="true" class="icon-question"></span> <a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327734" target="_blank">
+                                Часто задаваемые вопросы                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span aria-hidden="true" class="icon-call-in"></span> <a href="tel:+77172609090" class="support-phone">8-800-080-34-37 (бесплатно по РК)</a><br />
+                            <span aria-hidden="true" class="icon-clock"></span> <span title="Время работы контакт-центра" class="support-clock">24/7 (без выходных)</span><br />
+                        </div>
+                        <div class="col-xs-4">
+                            <span aria-hidden="true" class="icon-envelope"></span> <a href="mailto:support@ecc.kz" class="support-email">support@ecc.kz</a><br />
+                            <span aria-hidden="true" class="icon-users"></span> <a href="http://forum.ecc.kz" title="Форум" class="support-forum" target="_blank">forum.ecc.kz</a><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Navbar -->
+    <div class="horizontal-bar sidebar">
+        <div class="page-sidebar-inner slimscroll">
+            <ul class="menu accordion-menu" style="text-align: left">
+                    <li class="soc-links"><a href="https://www.youtube.com/channel/UC4Regrt3LL8vstz2Tj8kEng" target="_blank" id="btn-youtube" class="btn btn-youtube"><i class="fa fa-youtube"></i></a></li>
+                    <li>
+                        <a href="/ru/" class="waves-effect waves-button" title="Главная">
+                            <span class="menu-icon icon-home" style="margin-right: 0!important;"></span>
+                            <span class="active-page"></span>
+                        </a>
+                    </li>
+                    <li class="droplink"><a href="#" class="waves-effect waves-button" title="Справка"><span class="menu-icon icon-question"></span><p>Справка</p><span class="arrow"></span> <b class="caret"></b> </a><ul class="sub-menu" style="display: none;"><li><a href="https://wiki.goszakup.gov.kz" target="_blank">База знаний</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327702" target="_blank">Инструкция пользователей</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=26903410" target="_blank">Инструкция пользователей (квазигоссектор)</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=32964642" target="_blank">Инструкция пользователей осуществления организации питания обучающихся</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=50103581" target="_blank">Инструкция пользователей по договорам государственного образовательного заказа</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327710" target="_blank">Нормативные правовые акты</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327738" target="_blank">Контакты КВГА МФ РК</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327734" target="_blank">Часто задаваемые вопросы</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327732" target="_blank">Разъяснения по закупкам</a></li><li><a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327736" target="_blank">Часто допускаемые нарушения при проведении ГЗ</a></li><li><a href="http://forum.ecc.kz" target="_blank">Форум</a></li><li><a href="https://pki.gov.kz/index.php/ru/forum/index" target="_blank">Форум Национального удостоверяющего центра</a></li><li><a href="https://goszakup.gov.kz/ru/eo/news">Справочная информация КГЗ</a></li><li><a href="http://portal.goszakup.gov.kz/portal/uploads/v3/in/top_postavshikov" target="_blank">Сведения по потенциальным поставщикам в сфере строительства, соответствующих критериям финансовой устойчивости</a></li></ul></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Реестры"><span class="menu-icon icon-layers"></span><p>Реестры</p><span class="arrow"></span> <b class="caret"></b> </a><ul class="sub-menu" style="display: none;"><li><a href="https://goszakup.gov.kz/ru/registry/rnu">Реестр недобросовестных участников ГЗ</a></li><li><a href="https://goszakup.gov.kz/ru/registry/rnu_quasi">Реестр недобросовестных участников закупок</a></li><li><a href="https://goszakup.gov.kz/ru/registry/supplierreg">Реестр участников ГЗ </a></li><li><a href="https://goszakup.gov.kz/ru/registry/plan">Планы ГЗ</a></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Договоры"><p>Договоры</p><span class="arrow"></span></a><ul class="sub-menu" style="display: none;"><li><a href="https://goszakup.gov.kz/ru/registry/contract">Реестр договоров</a></li><li><a href="https://goszakup.gov.kz/ru/top/customers">TOP 100 заказчиков</a></li><li><a href="https://goszakup.gov.kz/ru/top/suppliers">TOP 100 поставщиков</a></li></ul></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Жалобы"><p>Жалобы</p><span class="arrow"></span></a><ul class="sub-menu" style="display: none;"><li><a href="https://goszakup.gov.kz/ru/registry/complaint">Реестр жалоб</a></li><li><a href="https://goszakup.gov.kz/ru/reports/complaint/supplier">ТОП Поставщиков</a></li></ul></li><li><a href="https://goszakup.gov.kz/ru/registry/tax">Реестр налоговых отчислений</a></li><li><a href="https://goszakup.gov.kz/ru/registry/rqc">Реестр квалифицированных поставщиков</a></li><li><a href="https://goszakup.gov.kz/ru/eDepository/dataWorkPerformed">Электронный депозитарий</a></li></ul></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Закупки"><span class="menu-icon icon-magnifier"></span><p>Закупки</p><span class="arrow"></span> <b class="caret"></b> </a><ul class="sub-menu" style="display: none;"><li><a href="https://goszakup.gov.kz/ru/search/lots">Поиск лотов</a></li><li><a href="https://goszakup.gov.kz/ru/search/announce">Поиск объявлений</a></li><li><a href="https://goszakup.gov.kz/ru/welcome/links">Закупки квазисектора (не субъекты ГЗ)</a></li><li><a href="https://zakup.nationalbank.kz" target="_blank">Закупки проводимые Национальным Банком РК</a></li></ul></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Отчетность"><span class="menu-icon icon-graph"></span><p>Отчетность</p><span class="arrow"></span> <b class="caret"></b> </a><ul class="sub-menu" style="display: none;"><li><a href="https://v3bl.goszakup.gov.kz/ru/reports/plans_report_admin" target="_blank">Отчет "Годовые планы"</a></li><li><a href="https://v3bl.goszakup.gov.kz/ru/rep/rep/m001" target="_blank">Ф.1 - Отчет о проведенных государственных закупках товаров, работ, услуг</a></li><li><a href="https://v3bl.goszakup.gov.kz/ru/rep/rep/m004" target="_blank">Ф.4 - Информация об объемах закупок у ОТП</a></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Модуль цен"><p>Модуль цен</p><span class="arrow"></span></a><ul class="sub-menu" style="display: none;"><li><a href="https://v3bl.goszakup.gov.kz/ru/reports/price_module/report_purchase_prices/index/egz" target="_blank">Мониторинг закупочных цен товаров АИИС "ЭГЗ"</a></li></ul></li></ul></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Разработчикам"><span class="menu-icon icon-puzzle"></span><p>Разработчикам</p><span class="arrow"></span> <b class="caret"></b> </a><ul class="sub-menu" style="display: none;"><li><a href="https://goszakup.gov.kz/ru/developer/ows_v2">Унифицированные сервисы V2</a></li><li><a href="https://goszakup.gov.kz/ru/developer/ows_v3">Унифицированные сервисы V3</a></li></ul></li><li class="droplink"><a href="#" class="waves-effect waves-button" title="Внешние сервисы"><span class="menu-icon icon-link"></span><p>Внешние сервисы</p><span class="arrow"></span> <b class="caret"></b> </a><ul class="sub-menu" style="display: none;"><li><a href="https://esf.gov.kz/" target="_blank">ИС "ЭСФ"</a></li><li><a href="http://office.sud.kz/index.xhtml" target="_blank">Судебный кабинет (сайт Верховного суда РК)</a></li><li><a href="http://enstru.kz/" target="_blank">ИС "ЕНС ТРУ"</a></li><li><a href="http://kgd.gov.kz/ru/services/ndspayer_search" target="_blank">Сервис проверки признака "Плательщик НДС" (сайт КГД МФ РК)</a></li><li><a href="http://kfm.gov.kz/ru/the-list-of-organizations-and-individuals-associa/" target="_blank">Лица, организации, связанные с финанс. терроризма и экстремизма (сайт КФМ МФ РК)</a></li><li><a href="http://kds.gov.kz/index.php/en/2016-05-18-09-20-49/reestr-ingenerno-tech-rabotnikov" target="_blank">Реестр аттестованных ИТР, участвующих в процессе проектирования и строительства</a></li><li><a href="http://kgd.gov.kz/ru/content/spiski-nesostoyatelnyh-dolzhnikov-0" target="_blank">Списки несостоятельных должников (сайт КГД МФ РК)</a></li><li><a href="http://kgd.gov.kz/ru/services/taxpayer_search_liquid" target="_blank">Поиск налогоплательщиков, находящихся на стадии ликвидации (сайт КГД МФ РК)</a></li><li><a href="https://egov.kz/cms/ru/services/citizen_and_the_government/e_app" target="_blank">Электронное обращение граждан</a></li><li><a href="http://cabinet.nca.kz/SertView" target="_blank">NCA eCabinet</a></li></ul></li>
+                    <li class="login">
+                        <a href="https://v3bl.goszakup.gov.kz/ru/user/">
+                            <span class="menu-icon icon-login"></span> Войти
+                        </a>
+                    </li>
+                    </ul>
+        </div>
+        <div class="slimScrollBar"></div>
+        <div class="slimScrollRail"></div>
+    </div>
+    <!--<div class="filter-sidebar sidebar">
+            </div>-->
+        <div class="page-inner">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-md-2" style="padding-right: 0">
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="https://goszakup.gov.kz/ru" class="">Главная</a></li>
+                            <li><a href="https://goszakup.gov.kz/ru/welcome/pay" class=""><strong class="text-black">Тарифы</strong></a></li>
+                            <li><a href="https://goszakup.gov.kz/ru/flk/index" class=""><strong class="text-black">ФЛК</strong></a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-10 text-right">
+                    <a href="https://e-catalog.gov.kz/" class="btn btn-default btn-katalog " target="_blank">
+                        <strong>
+                            <img src="/images/e-katalog2.svg" alt="EGZ Mobile"> Электронный каталог товаров                        </strong>
+                    </a>
+                    <a href="https://apps.apple.com/ru/app/egz-mobile/id1510870129" class="btn btn-default btn-ios " target="_blank">
+                        <img src="/images/app-store.png" alt="EGZ Mobile"> Приложение для iOS                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.hackware.mormont.goszakup" class="btn btn-default btn-android " target="_blank">
+                        <img src="/images/ic_launcher.png" alt="EGZ Mobile"> Приложение для Android                    </a>
+                    <a href="https://wiki.goszakup.gov.kz/pages/viewpage.action?pageId=327734" class="btn btn-danger " target="_blank">
+                        <strong>
+                            Помощь по платным услугам                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="main-wrapper">
+            
+        <div class="alert alert-danger" id="offline-message">
+            <strong>Внимание!</strong> Соединение с приложением прервано. Дождитесь повторного подключения.
+        </div>
+        
+        <!-- Main content start -->
+                
+        
+        <div id="loading" class="alert alert-info" style="display: none;">Подождите, идет загрузка данных</div>
+        
+        <div class="content-block">
+            
+            <!--<div class="alert alert-danger" role="alert">
+                <h3>Всем участникам государственных закупок в сфере строительства!</h3>
+
+                <p>С 1 сентября 2019 года все государственные закупки в сфере строительства осуществляются только способом конкурса с предварительным квалификационным отбором (далее - ПКО).</p>
+
+                <p>Условием участия потенциальных поставщиков в закупках в сфере строительства является их соответствие квалификационному требованию в виде финансовой устойчивости согласно показателям, определенным Правилами осуществления государственных закупок.</p>
+
+                <p>В случаях представления потенциальными поставщиками дополнительной налоговой отчетности за расчитываемый трехлетний период, влекущей изменение показателей финансовой устойчивости, по результатам камерального контроля на веб-портале государственных закупок будут внесены изменения в показатели финансовой устойчивости.</p>
+
+                <p>Для внесения изменений в показатели, при уплате налогов в рамках представленной налоговой отчетности, необходимо обратиться в КГД МФ РК с приложением подтверждающих документов.</p>
+
+                <p>Таким образом, потенциальным поставщикам предоставляется возможность повысить свои показатели финансовой устойчивости путем фактической уплаты налоговых обязательств.</p>
+            </div>-->
+            <div class="alert alert-danger hidden" role="alert" id="ajax_result"></div>
+            <div class="hidden" data-ln="ru" id="ln"></div>
+            
+    <div class="panel panel-default">
+        
+<div class="panel-heading">
+    <div class="row">
+        <div class="col-md-8">
+                                    <h4 style="display:inline-block">
+                Договор №                990140003755/220046/00                            </h4>
+        </div>
+        <div class="col-md-4" style="padding-top: 4px">
+            <div class="pull-right">
+                                                    <a class="btn btn-default btn-sm print_block" data-block-id="print_block" data-id="15430024" data-contract-number='990140003755/220046/00'>
+                        <span class="glyphicon glyphicon-print"></span> Распечатать                    </a>
+                            </div>
+        </div>
+    </div>
+</div>
+        <div class="panel-body">
+            
+    <ul class="nav nav-tabs">
+
+        
+            <li  >
+                <a href="https://goszakup.gov.kz/ru/egzcontract/cpublic/show/15430024">
+                                        Общее                                    </a>
+            </li>
+
+        
+            <li  >
+                <a href="https://goszakup.gov.kz/ru/egzcontract/cpublic/units/15430024">
+                                        Предметы договора                                    </a>
+            </li>
+
+        
+            <li  >
+                <a href="https://goszakup.gov.kz/ru/egzcontract/cpublic/customer_n_supplier/15430024">
+                                        Заказчик и поставщик                                    </a>
+            </li>
+
+        
+            <li  >
+                <a href="https://goszakup.gov.kz/ru/egzcontract/cpublic/contract/15430024">
+                                        Договор и согласование                                    </a>
+            </li>
+
+        
+            <li  >
+                <a href="https://goszakup.gov.kz/ru/egzcontract/cpublic/akts/15430024">
+                                        Информация об оплате                                    </a>
+            </li>
+
+        
+    </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active">
+                    <h3 class="title">
+                        Обеспечение исполнения договора                        <ul class="horizontal-list">
+                            <li>Статус:
+                                <span class="name">Исполнен</span>
+                            </li>
+                            <li>Способ закупки:
+                                <span class="name">Из одного источника по несостоявшимся закупкам</span>
+                            </li>
+                            <li>Статус прикрепления:
+                                <span class="name">Не начат</span>
+                            </li>
+                        </ul>
+                    </h3>
+                    <div class="container contract-panels">
+
+                        <h4 class="subtitle">Прикрепленные документы</h4>
+                                                    <div>
+                                <i>По договору отсутствуют Обеспечения исполнения договора</i>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <!-- Main content end -->
+                        <span id="_zero_68459" class="pull-right">
+                <noscript>
+                <a href="http://zero.kz/?s=68459" target="_blank">
+                <img src="//c.zero.kz/z.png?u=68459" width="88" height="31" alt="ZERO.kz" />
+                </a>
+                </noscript>
+            </span>
+                    </div><!-- Main Wrapper -->
+    </div><!-- Page Inner -->
+    <div class="page-footer">
+        <span class="pull-left">
+            АИИС ЭГЗ © 2022 | <a href="http://www.minfin.gov.kz">Министерство финансов Республики Казахстан</a>
+        </span>
+        <span class="pull-right">
+            <span class="ecc">
+                <a href="http://www.ecc.kz">АО "Центр электронных финансов"</a>
+            </span>
+        </span>
+        <div class="clear"></div>
+        <div class="text-center">Техническая поддержка пользователей портала 24/7 (без выходных):  8-800-080-34-37 (бесплатно по РК), <a href=mailto:support@ecc.kz>support@ecc.kz</a></div>
+    </div>
+</main><!-- Page Content -->
+<a class="scroll-up" href="javascript:void(0)" id="scrollUp" title="Прокрутить вверх"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script>
+    $(function () {
+        $('#advanced-search-button').click(function () {
+
+            var bar = $('.search-bar');
+
+            bar.toggle();
+
+            if(bar.is(":visible"))
+            {
+                $('#search').focus();
+                $('#mini-submit').addClass('btn-primary');
+
+            }
+            else{
+                $('#mini-submit').removeClass('btn-primary');
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    var reformalOptions = {
+        project_id: 982901,
+        project_host: "goszakupkz.reformal.ru",
+        tab_orientation: "left",
+        tab_indent: "50%",
+        tab_bg_color: "#038da5",
+        tab_border_color: "#FFFFFF",
+        tab_image_url: "http://tab.reformal.ru/0JjQtNC10Lgg0Lgg0L%252FRgNC10LTQu9C%252B0LbQtdC90LjRjw==/FFFFFF/cc80218e3bc37332f1821af78c238ad8/left/1/tab.png",
+        tab_border_width: 2
+    };
+
+    (function() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript'; script.async = true;
+        script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'media.reformal.ru/widgets/v3/reformal.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    })();
+</script><noscript><a href="http://reformal.ru"><img src="http://media.reformal.ru/reformal.png" /></a><a href="http://goszakupkz.reformal.ru">Идеи и предложения</a></noscript>
+</body>
+</html>
