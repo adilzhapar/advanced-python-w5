@@ -19,7 +19,7 @@ def retry(*exceptions, attemtps: int = 1, delay: float = 1, backoff: float = 0):
                     return func(*args, **kwargs)
                 except exceptions as e:
                     if attempt == attemtps - 1:
-                        raise
+                        raise ValueError("All attempts failed")
 
                     print(
                         f"{time.time()} Attempt {attempt + 1} failed with {type(e).__name__}: {e}. Retrying in {local_delay} seconds..."

@@ -9,7 +9,10 @@ from typing_extensions import Annotated
 from decorators import retry
 from utils import get_data, format_response
 
-app = typer.Typer()
+app = typer.Typer(
+    pretty_exceptions_enable=False,
+    pretty_exceptions_show_locals=False
+)
 
 
 @app.command()

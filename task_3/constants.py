@@ -1,1 +1,1 @@
-URL = "https://old.stat.gov.kz/api/juridical/counter/api/"
+URL = "https://stat.gov.kz/api/juridical"
