@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import os
+
+DATA_FILE = "storage.json"
+
+
+class KeyValueStore:
+
+    @staticmethod
+    def error_handler(func):
+        def wrapper(*args, **kwargs):
+            result = func(*args, **kwargs)
+
+            if isinstance(result, dict) and "error" in result:
+                print(result["error"])
+                return
+
+            return result
+
+        return wrapper
+
+    @classmethod
+    def load_data(cls):
+        if os.path.exists(DATA_FILE):
+            try:
+                with open(DATA_FILE, 'r') as f:
+                    return json.load(f)
+            except json.decoder.JSONDecodeError:
+                return {"error": "Invalid JSON data"}
+            except PermissionError:
+                return {"error": "Permission denied"}
+
+        return {}
+
+    @classmethod
+    def save_data(cls, data):
+        try:
+            with open(DATA_FILE, 'w') as f:
+                json.dump(data, f)
+        except PermissionError:
+            return {"error": "Permission denied when saving data."}
+
+        return True
+
+    @classmethod
+    @error_handler
+    def save_variable(cls, key, value):
+        data = cls.load_data()
+
+        if key in data:
+            data[key].append(value)
+        else:
+            data[key] = [value]
+
+        if cls.save_data(data):
+            return f"Value saved for key '{key}'."
+
+    @classmethod
+    @error_handler
+    def read_variable(cls, key):
+        data = cls.load_data()
+
+        result = data.get(key, [])
+
+        if result:
+            ", ".join(result)
+
+        return f"Key '{key}' not found."
+
+    @classmethod
+    @error_handler
+    def delete_variable(cls, key):
+        data = cls.load_data()
+
+        if key in data:
+            data.pop(key)
+            if cls.save_data(data):
+                return f"Key '{key}' deleted."
+        else:
+            return f"Key '{key}' not found."
+
+    @classmethod
+    def execute(cls, args):
+        if args.delete:
+            result = cls.delete_variable(args.key)
+        elif args.value:
+            result = cls.save_variable(args.key, args.value)
+        else:
+            result = cls.read_variable(args.key)
+
+        if result:
+            print(result)
+
+
+def main():
+    parser = argparse.ArgumentParser(description='CLI-based key-value storage.',
+                                     epilog='Example: ./storage --key mykey --value test')
+    parser.add_argument('--key', required=True, help='Key for the variable.')
+    parser.add_argument('--value', help='Value to store for the key.')
+    parser.add_argument('-delete', action='store_true', help='Delete the specified key.')
+
+    args = parser.parse_args()
+    KeyValueStore.execute(args)
+
+
+if __name__ == '__main__':
+    main()
